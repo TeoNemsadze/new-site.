@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>home</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+<img class="firstlogo" src="https://icons-for-free.com/iconfiles/png/512/halloween+moon+night+scary+icon-1320183490892982051.png" alt="logo">
+</a>  
+<nav>
+    <div class="header-center">
+      <ul>
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="reccomandation.html">Recommendation</a>
+        </li>
+    </ul>
+    </div>
+    <img src="img/moon.png" id="icon">
+  </nav>
+</div>  
+</header>
+<script>
+    var icon = document.getElementById('icon');
+
+    icon.onclick = function () {
+        document.body.classList.toggle("dark-theme")
+        if(document.body.classList.contains('dark-theme')) {
+            icon.src = "https://www.freeiconspng.com/thumbs/sun-icon/sun-icon-31.png";
+        } else {
+            icon.src = "img/moon.png";
+        }
+    }
+    </script>
+    <div class="first-box">
+      <h2>If you love scary stories you are right places!</h2>
+    <div class="main-img">
+        <img class="horror-img" src="img/horror.jpg">
+    </div>
+</div>
+<section>
+    <video autoplay muted loop id="myvideo">
+        <source src="img/melancholy.mp4">
+    </video>
+    <div class="horror-text">
+    <h1 class="title">Killer and the tree</h1>
+    </div>
+    <p class="first-paragraph">
+        ,,In a forest, where little girl roam,
+        Don't be afride or you will never return home
+        <br></br>
+          In a forest where little girls play,
+        They will be dead by the end of the day.
+        <br></br>
+        The game, killer and the tree,
+        There only needs to be Three.
+        <br></br>
+        Who shall die in vain, <br>
+        at the end of the game.'' 
+        </p>
+</section>
+<h1 class="main-txt">Top Stories</h1>
+   <div class="container">
+     
+     <div class="box1">
+      <a href="helloween.html"> <img class="box-img1" src="img/helloween.jpg"></a>
+     </div>
+     <div class="box2">
+       <a href="christmas.html"><img class="box-img2" src="img/Ghost.jpg"></a>
+     </div>
+     <div class="box3">
+       <img class="box-img3" src="img/moonlight.jpg">
+     </div>
+   </div>
+   <h1 class="last-title">Choose one card and find out what kind of luck you have</h1>
+   <div class="last-box">
+    <div class="card">
+        <div class="content">
+            
+            <p>You are lucky!
+                <br> 
+                Congratulations!
+                <br>
+                 You will live another five years.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="content">
+            
+            <p>You are not lucky!
+                <br>
+                Time of death today
+                <Br>
+                 00:00 hrs.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="content">
+            
+            <p>You will die now!</p>
+        </div>
+    </div>
+   </div>
+   <script type="text/javascript" src="vanilla-tilt.js"></script>
+   <script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400
+	});
+</script>
+   <footer>
+    <h4> &copy;all rights reserved</h4>
+   </footer>
+</body>
+</html>
